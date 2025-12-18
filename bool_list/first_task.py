@@ -8,7 +8,10 @@ elif operation == '-':
     print(first_number - second_number)
 elif operation == '*':
     print(first_number * second_number)
-elif operation == '/' and second_number == 0:
-    print('Division by zero is impossible')
+elif operation == '/':
+    if second_number == 0:
+        print('Division by zero is impossible')
+    else:
+        print(first_number / second_number)
 else:
-    print(first_number / second_number)
+    print('Invalid operation')
